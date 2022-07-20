@@ -1,0 +1,12 @@
+# Source: cluster-api-byoh/templates/machinedeployment.yaml
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+kind: ByoMachineTemplate
+metadata:
+  name: c700f883-md-taco
+  namespace: c700f883
+spec:
+  template:
+    spec:
+      selector:
+        matchLabels:
+          role: tks
